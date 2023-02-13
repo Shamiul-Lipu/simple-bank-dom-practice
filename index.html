@@ -18,17 +18,27 @@
 
     <main>
         <!-- Login validation section -->
-        <section class="bg-blue-100 w-9/12 mx-auto mt-14 p-8">
+        <section class="bg-blue-200 w-8/12 mx-auto mt-14 p-8">
             <h3 class="text-3xl text-cyan-900 mb-4 font-medium">Please Login</h3>
             <!-- input field -->
             <div>
-                <input class="bg-slate-100 w-9/12 mb-2 px-4" type="email" placeholder="enter.your@mail.com">
-                <input class="bg-slate-100 w-9/12 mb-2 px-4" type="password" placeholder="Password">
-                <button
+                <input id="email-address" class="bg-slate-100 w-9/12 mb-2 py-1 px-4 rounded-md" type="email"
+                    placeholder="enter.your@mail.com">
+                <input id="password-input" class="bg-slate-100 w-9/12 mb-2 py-1 px-4 rounded-md" type="password"
+                    placeholder="Password">
+                <button id="btn-submit"
                     class="block bg-blue-900 hover:bg-cyan-700 text-white font-medium rounded-lg px-8 py-2">Submit</button>
             </div>
         </section>
+
+        <!-- id & pass -->
+        <section class="bg-blue-200 w-8/12 mx-auto mt-14 p-1">
+            <p class="text-center text-cyan-900 my-4"> id: notRight@validation.com , pass: notsecure </p>
+        </section>
     </main>
+
+    <!-- JavaScript file -->
+    <script src="js/login.js"></script>
 </body>
 
 </html>
