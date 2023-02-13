@@ -7,7 +7,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
 
     withdrawInput.value = '';
     // validate input
-    if (isNaN(inputAmmount)) {
+    if (isNaN(inputAmmount) || inputAmmount <= 0) {
         alert('Please input a valid ammount!')
         return;
     }
